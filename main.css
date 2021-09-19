@@ -4,7 +4,7 @@
 
 body{
     /* !!! Change the background-image property! */
-    background-image: url('http://via.placeholder.com/1000x600.png'), linear-gradient(to bottom,#444444, #000000);
+    background-image: url('img/background.png'), linear-gradient(to bottom,#444444, #000000);
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ body{
 }
 
 #teaser img {
-    max-width: 500px;
+    max-width: none;
     display: block;
     margin: auto;
 }
@@ -149,4 +149,28 @@ code {
 
 h3 {
     font-size: 1.1em !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 10px
+}
+
+.grid-profile {
+    display: grid;
+    grid-template-columns: 120px auto
+}
+
+.grid-content {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    max-height: 150px;
+    margin-bottom: 20px
+}
+
+.headshot {
+    margin-bottom: 20px;
+    width: 120px !important
 }
