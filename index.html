@@ -53,21 +53,34 @@
         </div>
         <div id="content" class="col-md-10 col-xs-12 offset-md-1">
             <div id="teaser" class="col-10 offset-1 content-section">
-                <blockquote>!!! This is a 1-2 sentence "concentrated abstract". Explain in layman's terms the really high-level findings. It's fine to generalize a little. Remember, this is for <i>scientists and non-scientists alike!</i></blockquote>
+                <blockquote>Typealike postures are postures formed using the left or right hand, an open or closed hand form, and different wrist orientations, all further distinguished by hand position when on, just beside, or just below the keyboard.</blockquote>
                 <!-- !!! TEASER IMAGE HERE  -->
                 <img class="figure col-lg-10 img-fluid mx-auto d-block" src="img/teaser.png">
+		<p>Different postures can trigger different interactions, for example: 
+			(a) an open left hand at 90&#176; wrist rotation beside the keyboard can decrease the volume; 
+			(b) an open left hand at 0&#176; on the keyboard can open a screen capture snipping tool; 
+			(c) a closed right hand 0&#176; posture below the keyboard could turn the car in a racing game; 
+			(d) an open right hand at 0&#176; on the keyboard could advance a document page; and 
+			(e) a right open 90&#176; hand posture beside the keyboard could increase the volume.
+		    </p>
             </div>
 
             <div id="findings" class="col-md-10 offset-md-1 col-xs-12 offset-xs-0 content-section">
                 <h1>Quick Facts</h1>
                 <div class="row">
                     <div class="col-xl-6 offset-xl-0col-xs-12">
+			<p>Overall, our work contributes:</p>
                         <ol class="findings-row">
-                            <li class="findings-text">!!! Type 3-5 quick facts here about our findings.</li>
-                            <li class="findings-text">!!! Basically, if our readers have 30 seconds to read the paper, what are the main things we want them to know?</li>
-                            <li class="findings-text">!!! Creative <b>bolding</b> is a fun stylistic choice. </li>
-                            <li class="findings-text">!!! Remember to keep writing like a HUMAN! This is more akin to a Buzzfeed article than a paper.</li>
+                            <li class="findings-text">    
+			    A set of near-keyboard hand postures that are acceptable to users, recognized reliably, and fast to perform.
+			    </li>
+  			    <li class="findings-text">
+			    A dataset of nearly 350K posture images captured under different lighting conditions and two keyboard backgrounds
+			    </li>
                         </ol>
+		        <p>
+			We evaluate our approach by answering three questions: Is this style of postures preferable by users? Can they be recognized reliably? Are they quick and easy to perform? 
+			</p>
                     </div>
                     <div class="col-xl-6 offset-xl-0col-xs-12">
                         <div class="embed-responsive embed-responsive-16by9">
@@ -78,10 +91,25 @@
             </div>
 
             <div id="guide" class="col-md-10 offset-md-1 col-xs-12 offset-xs-0 content-section">
-                <h1>!!! Layout Guide: This is a H1 Section Title</h1>
-                <h2>!!! This is a h2 subsection title</h2>
-                <h3>!!! This is a h3 subsubsection title</h3>
-                <p>!!! This is body text. This should make up the majority of your writing. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h1>Design Considerations for the Interaction Vocubulary</h1>
+		<p>
+		    Our posture set was chosen to support our goal of a discrete command invoking method that aligns with natural laptop
+		usage. The postures are variations of hand posture styles, all based on three design considerations:
+			</p>
+                <ul>
+                <li>
+			<b>Recognition without a key press:</b> 
+			<p>Postures should not conflict with touch-typing hand motor behaviour when pressing keys and “disentangle” command execution from key-press events</p>
+		</li>
+                <li><b>Performed on or near the keyboard surface: </b>
+			<p>Postures should be compatible with maintaining a near-resting arm posture where the wrist is in constant contact with the laptop case.</p>
+			</li>
+		<li><b>Simple and easy to perform:</b>
+			<p>
+			Postures should be naturally comfortable to perform for the user but still distinguishable for detection in order to be practical.
+			</p>
+			</li>
+       </ul>
             </div>
 
             <div id="abstract" class="col-md-10 offset-md-1 col-xs-12 offset-xs-0 content-section">
