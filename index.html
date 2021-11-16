@@ -116,6 +116,7 @@
 
             <div id="abstract" class="col-md-10 offset-md-1 col-xs-12 offset-xs-0 content-section">
                 <h1>Abstract</h1>
+		    <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/typealike_system.png>
                 <p>
                     We propose a style of hand postures to trigger commands on a laptop. The key idea is to perform hand-postures while keeping the hands on, beside, or below the keyboard, to align with natural laptop usage. 36 hand-posture variations are explored considering three resting locations, left or right hand, open or closed hand, and three wrist rotation angles. A 30-participant formative study measures posture preferences and generates a dataset of nearly 350K images under different lighting conditions and backgrounds. A deep learning recognizer achieves over 97% accuracy when classifying all 36 postures with 2 additional non-posture classes for typing and non-typing. A second experiment with 20 participants validates the recognizer under real-time usage and compares posture invocation time with keyboard shortcuts. Results find low error rates and fast formation time, indicating postures are close to current typing and pointing postures. Finally, practical use case demonstrations are presented, and further extensions discussed.
                 </p>
@@ -129,7 +130,7 @@
 distinct locations on or near the keyboard that expands the input interaction space around the laptop.
 		</p>
                 <!-- <img class="figure img-fluid mx-auto d-block" src="http://via.placeholder.com/500x200.png"> -->
-                <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="img/Figure2.png">
+                <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="img/typealike_posture_set.png">
                <p>
 		This gives a design space of 36 postures that can be fully defined by variations along four parameters:
 		</p>
@@ -148,21 +149,28 @@ distinct locations on or near the keyboard that expands the input interaction sp
 		
 	    <div id="exp1" class="col-md-10 offset-md-1 col-xs-12 offset-xs-0 content-section">
                 <h1>Experiments</h1>
-		    <p> We conducted 2 experiments to validate the technique.</p>
+		<p> 
+			We conducted 2 experiments to validate the technique.
+			Both the experiments contained a game-like task representing one of four types of interaction: typing, clicking, shortcuts, and postures.
+		    
+		</p>
+		    <img class="figure col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/typealike_task_interface.gif>
+		<h2>Experiment I: User Preference & Data Gathering </h2>
                 <p>
 			The first experiment was performed to identify most popular postures and gather training data to create a recognizer.
 			We recruited 30 participants, 19 to 31 years old who had extensive experience with laptop computers with daily usage between 4 to 16 hours.
-			Participants were instructed to complete a game-like task representing one of four types of interaction: typing, clicking, shortcuts, and postures.
+			Participants were instructed to complete the task as accurately as possible.
 			Through this experiment, we measured user-preferences for the postures and gathered the images to construct dataset to build the recognizer.
+			To collect more samples, we used online data augmentation by asking participants to follow hand movements described in the task during posture formation. 
 		</p>
                 <!-- <img class="figure col-xl-4 col-lg-5 col-md-6 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="http://via.placeholder.com/700x700.png"> -->
-                <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="img/Figure3.png">
-                <p>!!! Figures are fun. Don't overwhelm people with text, this is mostly just a place to show off some figures.</p>
+                <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/experiment_1.gif>
                 <!-- <img class="figure col-xl-6 col-md-8 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="http://via.placeholder.com/500x200.png"> -->
-                <img class="figure col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="img/Figure4.png">
-                <p> 
+                <h2>Experiment II: User Preference & Data Gathering </h2>
+	        <p> 
 			For the second experiment, we used a similar game as in the previous experiment except this time, when participants formed the required posture, it was recognized and they immediately continued to the next trial. 
 		</p>
+		    <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/experiment_2.gif>
                 <!-- <img class="figure col-lg-10 img-fluid mx-auto d-block" src="http://via.placeholder.com/500x200.png"> -->
                 
 
@@ -177,6 +185,7 @@ distinct locations on or near the keyboard that expands the input interaction sp
                     <li>
                         Below the keyboard was most preferred location for posture formation.
                     </li>
+		    	<img class="figure col-xs-12 img-fluid mx-auto d-block" src=img/experiment_1_results.gif>
                     <li>
                         Open-hand postures were significantly faster than close-hands.
                     </li>
@@ -186,10 +195,16 @@ distinct locations on or near the keyboard that expands the input interaction sp
 	            <li>
                         Area below the keyboard was significantly faster for posture formation compared to beside or on
                     </li>
+			<img class="figure col-xs-12 img-fluid mx-auto d-block" src=img/experiment_2_results_a.gif>
+		    <li>
+                        Postures are significantly faster when coming from Typing or Clicking reference task
+                    </li>
+	            <li>
+                        Shortcuts are faster when going back to Typing task.
+                    </li>
+			<img class="figure col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/experiment_2_results_b.gif>
                 </ol>
-		<img class="figure col-xs-12 img-fluid mx-auto d-block" src="img/Figure6.png">
-                <img class="figure col-xs-12 img-fluid mx-auto d-block" src="img/Figure8.png">
-                <img class="figure col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="img/Figure9.png">
+
             </div>
 
             <div id="disc" class="col-md-10 offset-md-1 col-xs-12 offset-xs-0 content-section">
