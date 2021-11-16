@@ -135,10 +135,10 @@ distinct locations on or near the keyboard that expands the input interaction sp
 		This gives a design space of 36 postures that can be fully defined by variations along four parameters:
 		</p>
                 <ol>
-                    <li>Hand (dominant, non-dominant)</li>
                     <li>Form (open, closed)</li>
                     <li>Orientation (0&#176;, 90&#176;, 180&#176;) </li>
                     <li>Surface (on, beside, below)</li>			
+		    <li>Hand (dominant, non-dominant)</li>
                 </ol>
 
                 <p><b>Finally,</b> all postures are characterized with a slightly extended thumb to appear unique for recognition without a keypress.</p>
@@ -166,9 +166,24 @@ distinct locations on or near the keyboard that expands the input interaction sp
                 <!-- <img class="figure col-xl-4 col-lg-5 col-md-6 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="http://via.placeholder.com/700x700.png"> -->
                 <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/experiment_1.gif>
                 <!-- <img class="figure col-xl-6 col-md-8 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src="http://via.placeholder.com/500x200.png"> -->
-                <h2>Experiment II: User Preference & Data Gathering </h2>
+                <h2>Recognition using Deep Learning </h2>
+		<ul>
+                <li>
+			We used Transfer Learning on ResNet-50 architecture with weights pre-trained on the ImageNet dataset.
+		</li>
+                <li>
+			Smith’s one-cycle policy was used to vary the learning rate and achieve faster convergence.
+		</li>
+		<li>
+			Monte Carlo cross-validation with 10 random splits was used for model evaluation. Confusion matrices obtained from each run were aggregate to obtain a final confusion matrix as shown in the figure.
+		</li>
+	       </ul>
+		    <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/confusion_matrix.png>
+	        <h2>Experiment II: Technique Evaluation </h2>
 	        <p> 
-			For the second experiment, we used a similar game as in the previous experiment except this time, when participants formed the required posture, it was recognized and they immediately continued to the next trial. 
+			For the second experiment, we used a similar game as in the first experiment except this time, when participants formed the required posture, it was recognized and they immediately continued to the next trial. 
+			Participants were instructed to complete the task as accurately and as quickly as possible.
+			Through this experiment, we measured the task completion time as well as the transition times between different interaction techniques. 
 		</p>
 		    <img class="figure col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/experiment_2.gif>
                 <!-- <img class="figure col-lg-10 img-fluid mx-auto d-block" src="http://via.placeholder.com/500x200.png"> -->
@@ -202,7 +217,7 @@ distinct locations on or near the keyboard that expands the input interaction sp
 	            <li>
                         Shortcuts are faster when going back to Typing task.
                     </li>
-			<img class="figure col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 img-fluid mx-auto d-block" src=img/experiment_2_results_b.gif>
+			<img class="figure col-xs-12 img-fluid mx-auto d-block" src=img/experiment_2_results_b.gif>
                 </ol>
 
             </div>
