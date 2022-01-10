@@ -176,3 +176,26 @@ h3 {
     margin-bottom: 20px;
     width: 120px !important
 }
+
+.media-highlight{
+    width: 500px;
+    text-align: justify;
+    margin: 10px auto;
+}
+.media-highlight-image{
+    width: 100%;
+}
+.media-highlight-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.media-highlight-description{
+    
+}
+.media-item{
+    display: inline-block;
+    margin-right: 30px;
+}
+.media-item img{
+    width:100px;
+}
