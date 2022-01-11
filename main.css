@@ -192,6 +192,9 @@ h3 {
 .media-highlight-description{
     
 }
+.media-container{
+    text-align: center;
+}
 .media-item{
     display: inline-block;
     margin-right: 30px;
